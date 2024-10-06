@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote for Your Favorite Sport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Favorite Sport</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name" required>
+        <form id="voteForm">
+            <label>
+                <input type="radio" name="sport" value="basketball" required> Basketball
+            </label><br>
+            <label>
+                <input type="radio" name="sport" value="olympicHandball"> Olympic Handball
+            </label><br>
+            <label>
+                <input type="radio" name="sport" value="soccer"> Soccer
+            </label><br>
+            <label>
+                <input type="radio" name="sport" value="hockey"> Hockey
+            </label><br>
+            <button type="submit">Vote</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Your Vote is Submitted!</h2>
+            <h3>Current Votes:</h3>
+            <ul id="voteCount"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
